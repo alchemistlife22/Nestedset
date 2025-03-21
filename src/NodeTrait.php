@@ -1280,8 +1280,8 @@ trait NodeTrait
 
     public static function insertNewNode($data, $parentId, $position = NestedSet::LEFT): void
     {
-        $parent = static::where([static ::getUserIdName() => $parentId])->first();
-        $child = $parent->children()->where([static ::getPosition() => $position])->first();
+        $parent = static::where([static::getUserIdName() => $parentId])->first();
+        $child = $parent->children()->where([static::getPosition() => $position])->first();
         if (!$child) {
             $newNode = static::create($data);
             if ($position == 0) {
@@ -1291,8 +1291,8 @@ trait NodeTrait
             }
         } else {
             $nextChild = $child;
-            while ($nextChild->children()->where([static ::getPosition() => $position])->exists()) {
-                $nextChild = $nextChild->children()->where([static ::getPosition() => $position])->first();
+            while ($nextChild->children()->where([static::getPosition() => $position])->exists()) {
+                $nextChild = $nextChild->children()->where([static::getPosition() => $position])->first();
             }
             $newNode = static::create($data);
             if ($position == 0) {
