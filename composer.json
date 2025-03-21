@@ -2,7 +2,7 @@
     "name": "alchemistlife22/nestedset",
     "description": "Nested Set Model for Laravel",
     "type": "laravel",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "keywords": [
         "nested sets",
         "laravel",
