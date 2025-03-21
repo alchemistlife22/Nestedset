@@ -2,6 +2,7 @@
     "name": "alchemist/nestedset",
     "description": "Nested Set Model for Laravel",
     "type": "laravel",
+    "version": "1.0.0",
     "keywords": [
         "nested sets",
         "laravel",
@@ -28,7 +29,7 @@
     "prefer-stable": true,
     "extra": {
         "branch-alias": {
-            "dev-master": "v5.0.x-dev"
+            "dev-main": "1.0.x-dev"
         },
         "laravel": {
             "providers": [
